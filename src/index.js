@@ -18,3 +18,12 @@ root.render(
     </CartProvider>
   </SidebarProvider>
 );
+/* <SidebarProvider>
+    <CartProvider>
+      <ProductProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ProductProvider>
+    </CartProvider>
+  </SidebarProvider> */
