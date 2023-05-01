@@ -6,7 +6,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <div className="overflow-hidden">

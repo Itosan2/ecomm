@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="h-[780px] bg-hero bg-no-repeat bg-center py-24">
+    <section className="hero-section h-[800px] bg-hero bg-no-repeat bg-center py-24">
       <div className="container mx-auto flex justify-around h-full">
         {/* text */}
         <div className="flex flex-col justify-center">
@@ -27,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
         {/* image */}
-        <div className="hidden lg:block">
+        <div className="img-woman hidden lg:block">
           <img src={WomanImg} alt="" />
         </div>
       </div>
