@@ -49,6 +49,7 @@ const Sidebar = () => {
           </div>
         </div>
         <Link
+          onClick={handleClose}
           to="/"
           className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium "
         >

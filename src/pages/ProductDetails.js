@@ -3,7 +3,6 @@ import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 import { ProductContext } from "../contexts/ProductContext";
-import { SidebarContext } from "../contexts/SidebarContext";
 import ScrollToTop from "../components/ScrollToTop";
 
 const ProductDetails = () => {
@@ -11,11 +10,6 @@ const ProductDetails = () => {
   const { id } = useParams();
   const { products } = useContext(ProductContext);
   const { addToCart } = useContext(CartContext);
-  const { handleClose, setIsOpen, isOpen } = useContext(SidebarContext);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, []);
 
   //get the single product based on the id
   const product = products.find((item) => {
@@ -53,7 +47,7 @@ const ProductDetails = () => {
             <p className="mb-6 text-[12px] lg:text-[16px]">{description}</p>
             <button
               onClick={() => addToCart(product, product.id)}
-              className="bg-primary py-4 px-8 text-white"
+              className="pd-addbtn bg-primary py-4 px-8 text-white"
             >
               Add to cart
             </button>

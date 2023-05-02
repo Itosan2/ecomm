@@ -7,3 +7,29 @@
     @apply font-primary text-primary;
   }
 }
+
+.pd-addbtn {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  border: none;
+}
+
+.pd-addbtn::before {
+  content: "Add to cart";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  background-color: green;
+  transition: transform 0.4s ease-out;
+  z-index: -1;
+}
+
+.pd-addbtn:hover:before {
+  transform: translateX(-100%);
+  z-index: 2;
+}
